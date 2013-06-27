@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: Ti.Light is a sample project to create a flashlight
+author: Benjamin Bahrenburg
+license: Apache 2
+copyright: Copyright (c) 2013 by Benjamin Bahrenburg
+
+
+# these should not be edited
+name: tilight
+moduleid: ti.light
+guid: 53cb7380-b3ba-4581-ad7d-4d2286d2b589
+platform: android
+minsdk: 3.1.0.GA

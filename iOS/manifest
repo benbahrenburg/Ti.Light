@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: Ti.Light is an example how how to build a flashlight
+author: Benjamin Bahrenburg
+license: Apache 2
+copyright: Copyright (c) 2013 by Benjamin Bahrenburg
+
+
+# these should not be edited
+name: TiLight
+moduleid: ti.light
+guid: 37ff229c-2c1b-4ee4-8eb8-8c09bbe24a24
+platform: iphone
+minsdk: 3.1.0.GA
