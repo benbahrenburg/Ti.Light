@@ -8,7 +8,7 @@ package ti.light;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-
+import android.os.Build;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 
@@ -81,7 +81,11 @@ public class TilightModule extends KrollModule
 		if(camera==null){
 			camera = Camera.open();							
 		}	
-
+                
+                if (Build.VERSION.SDK_INT >= 11) {
+		   camera.setPreviewTexture(new SurfaceTexture(0));
+                }
+                
 		final Parameters p = camera.getParameters();
 		
 		if (isLighOn) {			 
