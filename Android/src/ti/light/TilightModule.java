@@ -91,7 +91,9 @@ public class TilightModule extends KrollModule
 		if (isLighOn) {			 
 			p.setFlashMode(Parameters.FLASH_MODE_OFF);
 			camera.setParameters(p);
+			camera.setPreviewCallback(null);
 			camera.stopPreview();
+			camera.release();
 			isLighOn = false;
 			Log.i(TAG, "torch is turn off!");
 		} else {			
