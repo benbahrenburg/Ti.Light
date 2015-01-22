@@ -39,6 +39,17 @@ public class TilightModule extends KrollModule
 		PackageManager pm = app.getApplicationContext().getPackageManager();
 		// if device support camera?
 		isSupport = pm.hasSystemFeature(PackageManager.FEATURE_CAMERA);
+		
+		if (isSupport) {
+	            camera = Camera.open();
+	            List<String> supportedFlashModes = camera.getParameters().getSupportedFlashModes();
+	            if (supportedFlashModes == null
+	                    || (supportedFlashModes.size() == 1 && supportedFlashModes.get(0).equals("off"))) {
+	                isSupport = false;
+	            }
+	            camera.release();
+	            camera = null;
+	        }
 	}
 
 	@Kroll.method
