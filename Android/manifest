@@ -4,6 +4,7 @@
 #
 version: 0.1
 apiversion: 2
+architectures: armeabi armeabi-v7a x86
 description: Ti.Light is a sample project to create a flashlight
 author: Benjamin Bahrenburg
 license: Apache 2
