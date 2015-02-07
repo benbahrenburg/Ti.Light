@@ -2,8 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.1
+version: 0.2
 apiversion: 2
+architectures: armv7 arm64 i386 x86_64
 description: Ti.Light is an example how how to build a flashlight
 author: Benjamin Bahrenburg
 license: Apache 2
@@ -15,4 +16,4 @@ name: TiLight
 moduleid: ti.light
 guid: 37ff229c-2c1b-4ee4-8eb8-8c09bbe24a24
 platform: iphone
-minsdk: 3.1.0.GA
+minsdk: 3.5.0.GA
