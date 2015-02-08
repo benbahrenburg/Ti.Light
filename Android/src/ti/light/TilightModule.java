@@ -113,6 +113,7 @@ public class TilightModule extends KrollModule
 			camera.setPreviewCallback(null);
 			camera.stopPreview();
 			camera.release();
+			camera = null;
 			isLightOn = false;
 			Log.i(TAG, "torch is turn off!");
 		} else {
